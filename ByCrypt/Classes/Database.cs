@@ -37,6 +37,8 @@ namespace ByCrypt.Classes
 
             string value = (string)command.ExecuteScalar();
 
+            conn.Close();
+
             return value;
         }
     }
